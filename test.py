@@ -1,40 +1,42 @@
-from multiprocessing import Process
+import os
+import mysql.connector
+import xlrd
 import sys
-sys.path.append("sells/script/")
-from sells_TPE import SELLS_TPE_INIT
-from sells_NTC import SELLS_NTC_INIT
-from info_box_TPE import INFO_BOX_TPE_INIT
-from info_box_NTC import INFO_BOX_NTC_INIT
-from house_box_TPE import HOUSE_BOX_TPE_INIT
-from house_box_NTC import HOUSE_BOX_NTC_INIT
-from img_TPE import IMG_TPE_INIT
-from img_NTC import IMG_NTC_INIT
+sys.path.append("lib/")
+from myio import read_excel, save
 
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  database="storemanager"
+)
 
-if __name__ == '__main__':
-    pl = [INFO_BOX_TPE_INIT, INFO_BOX_NTC_INIT, HOUSE_BOX_TPE_INIT, HOUSE_BOX_NTC_INIT, IMG_TPE_INIT, IMG_NTC_INIT]
-    p = [None] * 6
+mycursor = mydb.cursor()
 
-    p1 = Process(target = SELLS_TPE_INIT)
-    p2 = Process(target = SELLS_NTC_INIT)
-    # start colleting data
-    p1.start()
-    p2.start()
-    # p1, p2 須執行完才能往下進行
-    p1.join()
-    p2.join()
-    p1.close()
-    p2.close()
-    print("Data collection succeed")
+# check if table exists
+table = 'lease_img_TPE'
+stmt = "SHOW TABLES LIKE 'lease_img_TPE'"
+mycursor.execute(stmt)
+result = mycursor.fetchone()
+if result:
+    # there is a table named "tableName"
+    print("table already exists")
+else:
+    # there are no tables named "tableName"
+    sql = "CREATE TABLE lease_img_TPE (post_id INT(255)  PRIMARY KEY, directory VARCHAR(255))"
+    mycursor.execute(sql)
 
-    try:
-        for i in range(0, 6):
-            p[i] = Process(target = pl[i])
-            p[i].start()
-        for i in range(0, 6):
-            p[i].join()
-            p[i].close()
-    except Exception as e:
-        print(e)
-    finally:
-        print("sells data collection complete")
+sql = "INSERT INTO lease_img_TPE (post_id, directory) VALUES (%s, %s)"
+
+dir = "C:/Python/database/sells/images/NTC"
+result = os.listdir(path = r"C:\Python\database\sells\images\NTC")
+#result = os.walk(r"D:\Python\database\sells\images\NTC")
+for p in result:
+    post_id = p
+    path = os.path.join(dir, p)
+    val = (post_id, path)
+    print(val)
+    mycursor.execute(sql, val)
+
+mydb.commit()
+mydb.close()
