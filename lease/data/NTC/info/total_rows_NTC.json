@@ -1,10 +1,24 @@
 [
   {
-    "addr": "新北市新莊區中正路",
-    "area": 550,
-    "post_id": 7084204,
-    "price": 500000,
-    "url": "rent-detail-7084204.html"
+    "addr": "新北市新店區中正路",
+    "area": 30,
+    "post_id": 6837120,
+    "price": 30000,
+    "url": "rent-detail-6837120.html"
+  },
+  {
+    "addr": "新北市鶯歌區文化路68號",
+    "area": 4.5,
+    "post_id": 6838571,
+    "price": 35000,
+    "url": "rent-detail-6838571.html"
+  },
+  {
+    "addr": "新北市蘆洲區永康街",
+    "area": 50,
+    "post_id": 6925937,
+    "price": 79000,
+    "url": "rent-detail-6925937.html"
   },
   {
     "addr": "新北市板橋區大同街41號",
@@ -12,6 +26,27 @@
     "post_id": 7038017,
     "price": 60000,
     "url": "rent-detail-7038017.html"
+  },
+  {
+    "addr": "新北市板橋區雙十路二段79號",
+    "area": 30,
+    "post_id": 7083121,
+    "price": 29500,
+    "url": "rent-detail-7083121.html"
+  },
+  {
+    "addr": "新北市板橋區仁化街64巷16號",
+    "area": 53,
+    "post_id": 7086933,
+    "price": 40000,
+    "url": "rent-detail-7086933.html"
+  },
+  {
+    "addr": "新北市新莊區中正路",
+    "area": 550,
+    "post_id": 7084204,
+    "price": 500000,
+    "url": "rent-detail-7084204.html"
   },
   {
     "addr": "新北市板橋區國泰街26號",
@@ -54,13 +89,6 @@
     "post_id": 6887394,
     "price": 750000,
     "url": "rent-detail-6887394.html"
-  },
-  {
-    "addr": "新北市蘆洲區永康街",
-    "area": 50,
-    "post_id": 6925937,
-    "price": 79000,
-    "url": "rent-detail-6925937.html"
   },
   {
     "addr": "新北市新店區寶橋路59號",
@@ -138,13 +166,6 @@
     "post_id": 7086777,
     "price": 28000,
     "url": "rent-detail-7086777.html"
-  },
-  {
-    "addr": "新北市板橋區仁化街64巷16號",
-    "area": 53,
-    "post_id": 7086933,
-    "price": 40000,
-    "url": "rent-detail-7086933.html"
   },
   {
     "addr": "新北市樹林區中山路一段",
@@ -273,25 +294,11 @@
     "url": "rent-detail-6834952.html"
   },
   {
-    "addr": "新北市新店區中正路",
-    "area": 30,
-    "post_id": 6837120,
-    "price": 30000,
-    "url": "rent-detail-6837120.html"
-  },
-  {
     "addr": "新北市三重區重新路二段140號",
     "area": 12,
     "post_id": 6837683,
     "price": 25000,
     "url": "rent-detail-6837683.html"
-  },
-  {
-    "addr": "新北市鶯歌區文化路68號",
-    "area": 4.5,
-    "post_id": 6838571,
-    "price": 35000,
-    "url": "rent-detail-6838571.html"
   },
   {
     "addr": "新北市中和區連城路327號",
@@ -931,13 +938,6 @@
     "url": "rent-detail-7082846.html"
   },
   {
-    "addr": "新北市板橋區雙十路二段79號",
-    "area": 30,
-    "post_id": 7083121,
-    "price": 29500,
-    "url": "rent-detail-7083121.html"
-  },
-  {
     "addr": "新北市新店區新烏路三段3號",
     "area": 410,
     "post_id": 7086169,
@@ -1127,6 +1127,41 @@
     "url": "rent-detail-6899092.html"
   },
   {
+    "addr": "新北市板橋區四川路一段385號",
+    "area": 27,
+    "post_id": 6785281,
+    "price": 50000,
+    "url": "rent-detail-6785281.html"
+  },
+  {
+    "addr": "新北市板橋區民權路",
+    "area": 20,
+    "post_id": 6911267,
+    "price": 38000,
+    "url": "rent-detail-6911267.html"
+  },
+  {
+    "addr": "新北市板橋區雙十路二段",
+    "area": 96,
+    "post_id": 6937976,
+    "price": 65000,
+    "url": "rent-detail-6937976.html"
+  },
+  {
+    "addr": "新北市新莊區中正路",
+    "area": 63,
+    "post_id": 6993495,
+    "price": 60000,
+    "url": "rent-detail-6993495.html"
+  },
+  {
+    "addr": "新北市三重區重新路四段",
+    "area": 141,
+    "post_id": 7069706,
+    "price": 250000,
+    "url": "rent-detail-7069706.html"
+  },
+  {
     "addr": "新北市板橋區文化路一段421巷6號",
     "area": 7,
     "post_id": 6861721,
@@ -1260,13 +1295,6 @@
     "url": "rent-detail-6853617.html"
   },
   {
-    "addr": "新北市三重區重新路四段",
-    "area": 141,
-    "post_id": 7069706,
-    "price": 250000,
-    "url": "rent-detail-7069706.html"
-  },
-  {
     "addr": "新北市淡水區中正路",
     "area": 5,
     "post_id": 6887243,
@@ -1300,13 +1328,6 @@
     "post_id": 6895398,
     "price": 62000,
     "url": "rent-detail-6895398.html"
-  },
-  {
-    "addr": "新北市新莊區中正路",
-    "area": 63,
-    "post_id": 6993495,
-    "price": 60000,
-    "url": "rent-detail-6993495.html"
   },
   {
     "addr": "新北市永和區永和路一段90號",
@@ -1468,13 +1489,6 @@
     "post_id": 6728173,
     "price": 48000,
     "url": "rent-detail-6728173.html"
-  },
-  {
-    "addr": "新北市板橋區四川路一段385號",
-    "area": 27,
-    "post_id": 6785281,
-    "price": 50000,
-    "url": "rent-detail-6785281.html"
   },
   {
     "addr": "新北市淡水區北新路169巷3號",
@@ -1946,13 +1960,6 @@
     "url": "rent-detail-6910820.html"
   },
   {
-    "addr": "新北市板橋區民權路",
-    "area": 20,
-    "post_id": 6911267,
-    "price": 38000,
-    "url": "rent-detail-6911267.html"
-  },
-  {
     "addr": "新北市板橋區四川路二段",
     "area": 32,
     "post_id": 6911362,
@@ -2112,13 +2119,6 @@
     "post_id": 6936378,
     "price": 25000,
     "url": "rent-detail-6936378.html"
-  },
-  {
-    "addr": "新北市板橋區雙十路二段",
-    "area": 96,
-    "post_id": 6937976,
-    "price": 65000,
-    "url": "rent-detail-6937976.html"
   },
   {
     "addr": "新北市淡水區濱海路二段202巷",
@@ -3122,6 +3122,174 @@
     "url": "rent-detail-6774715.html"
   },
   {
+    "addr": "新北市板橋區後埔街",
+    "area": 38,
+    "post_id": 7030513,
+    "price": 40000,
+    "url": "rent-detail-7030513.html"
+  },
+  {
+    "addr": "新北市永和區中興街",
+    "area": 26.9,
+    "post_id": 7103233,
+    "price": 62000,
+    "url": "rent-detail-7103233.html"
+  },
+  {
+    "addr": "新北市新莊區瓊泰路",
+    "area": 33,
+    "post_id": 6809255,
+    "price": 50000,
+    "url": "rent-detail-6809255.html"
+  },
+  {
+    "addr": "新北市三重區中華路",
+    "area": 101.7,
+    "post_id": 7060607,
+    "price": 150000,
+    "url": "rent-detail-7060607.html"
+  },
+  {
+    "addr": "新北市新莊區中正路",
+    "area": 28,
+    "post_id": 6919436,
+    "price": 48000,
+    "url": "rent-detail-6919436.html"
+  },
+  {
+    "addr": "新北市新莊區中正路",
+    "area": 28.8,
+    "post_id": 7027878,
+    "price": 46000,
+    "url": "rent-detail-7027878.html"
+  },
+  {
+    "addr": "新北市汐止區明峰街",
+    "area": 37,
+    "post_id": 7138934,
+    "price": 36000,
+    "url": "rent-detail-7138934.html"
+  },
+  {
+    "addr": "新北市三峽區中華路",
+    "area": 28,
+    "post_id": 7048727,
+    "price": 24000,
+    "url": "rent-detail-7048727.html"
+  },
+  {
+    "addr": "新北市板橋區南雅東路",
+    "area": 2,
+    "post_id": 7062662,
+    "price": 14000,
+    "url": "rent-detail-7062662.html"
+  },
+  {
+    "addr": "新北市新莊區中平路26巷",
+    "area": 15.2,
+    "post_id": 6671399,
+    "price": 20000,
+    "url": "rent-detail-6671399.html"
+  },
+  {
+    "addr": "新北市汐止區民族二街",
+    "area": 40,
+    "post_id": 7079895,
+    "price": 150000,
+    "url": "rent-detail-7079895.html"
+  },
+  {
+    "addr": "新北市中和區新生街186巷",
+    "area": 28,
+    "post_id": 7061663,
+    "price": 25000,
+    "url": "rent-detail-7061663.html"
+  },
+  {
+    "addr": "新北市新店區中正路",
+    "area": 37,
+    "post_id": 6776099,
+    "price": 140000,
+    "url": "rent-detail-6776099.html"
+  },
+  {
+    "addr": "新北市板橋區中山路一段",
+    "area": 80,
+    "post_id": 6904905,
+    "price": 85000,
+    "url": "rent-detail-6904905.html"
+  },
+  {
+    "addr": "新北市板橋區民族路",
+    "area": 92,
+    "post_id": 7018981,
+    "price": 85000,
+    "url": "rent-detail-7018981.html"
+  },
+  {
+    "addr": "新北市樹林區文化街17號",
+    "area": 50,
+    "post_id": 7058789,
+    "price": 32000,
+    "url": "rent-detail-7058789.html"
+  },
+  {
+    "addr": "新北市新莊區中平路",
+    "area": 10,
+    "post_id": 7020105,
+    "price": 18000,
+    "url": "rent-detail-7020105.html"
+  },
+  {
+    "addr": "新北市板橋區四川路一段",
+    "area": 40,
+    "post_id": 7008250,
+    "price": 24000,
+    "url": "rent-detail-7008250.html"
+  },
+  {
+    "addr": "新北市永和區永亨路",
+    "area": 19.3,
+    "post_id": 7044913,
+    "price": 32000,
+    "url": "rent-detail-7044913.html"
+  },
+  {
+    "addr": "新北市樹林區博愛街",
+    "area": 12,
+    "post_id": 7101090,
+    "price": 50000,
+    "url": "rent-detail-7101090.html"
+  },
+  {
+    "addr": "新北市樹林區保安二街",
+    "area": 22,
+    "post_id": 7101075,
+    "price": 42000,
+    "url": "rent-detail-7101075.html"
+  },
+  {
+    "addr": "新北市中和區橋和路",
+    "area": 208,
+    "post_id": 6983803,
+    "price": 158000,
+    "url": "rent-detail-6983803.html"
+  },
+  {
+    "addr": "新北市新莊區昌平街",
+    "area": 36.7,
+    "post_id": 7119108,
+    "price": 43000,
+    "url": "rent-detail-7119108.html"
+  },
+  {
+    "addr": "新北市新莊區昌平街",
+    "area": 76.5,
+    "post_id": 7040888,
+    "price": 60000,
+    "url": "rent-detail-7040888.html"
+  },
+  {
     "addr": "新北市板橋區中山路一段50巷13號",
     "area": 30,
     "post_id": 7133230,
@@ -4032,13 +4200,6 @@
     "url": "rent-detail-6974458.html"
   },
   {
-    "addr": "新北市樹林區中華路",
-    "area": 28,
-    "post_id": 7107983,
-    "price": 42000,
-    "url": "rent-detail-7107983.html"
-  },
-  {
     "addr": "新北市鶯歌區重慶街88號",
     "area": 500,
     "post_id": 7137179,
@@ -4177,13 +4338,6 @@
     "post_id": 6955421,
     "price": 90000,
     "url": "rent-detail-6955421.html"
-  },
-  {
-    "addr": "新北市三重區中華路",
-    "area": 101.7,
-    "post_id": 7060607,
-    "price": 150000,
-    "url": "rent-detail-7060607.html"
   },
   {
     "addr": "新北市板橋區宮口街12號",
@@ -4466,6 +4620,13 @@
     "url": "rent-detail-7121742.html"
   },
   {
+    "addr": "新北市三峽區和平街109號",
+    "area": 18,
+    "post_id": 7121742,
+    "price": 50000,
+    "url": "rent-detail-7121742.html"
+  },
+  {
     "addr": "新北市三峽區中華路",
     "area": 24,
     "post_id": 7058687,
@@ -4683,13 +4844,6 @@
     "url": "rent-detail-6640397.html"
   },
   {
-    "addr": "新北市三峽區中華路",
-    "area": 28,
-    "post_id": 7048727,
-    "price": 24000,
-    "url": "rent-detail-7048727.html"
-  },
-  {
     "addr": "新北市蘆洲區中山一路189號",
     "area": 45,
     "post_id": 6946843,
@@ -4872,13 +5026,6 @@
     "url": "rent-detail-6926821.html"
   },
   {
-    "addr": "新北市樹林區文化街17號",
-    "area": 50,
-    "post_id": 7058789,
-    "price": 32000,
-    "url": "rent-detail-7058789.html"
-  },
-  {
     "addr": "新北市中和區景新街410巷13號",
     "area": 10,
     "post_id": 7080156,
@@ -5024,13 +5171,6 @@
     "post_id": 7098043,
     "price": 35000,
     "url": "rent-detail-7098043.html"
-  },
-  {
-    "addr": "新北市中和區新生街186巷",
-    "area": 28,
-    "post_id": 7061663,
-    "price": 25000,
-    "url": "rent-detail-7061663.html"
   },
   {
     "addr": "新北市中和區景新街418巷",
@@ -5320,13 +5460,6 @@
     "url": "rent-detail-6990022.html"
   },
   {
-    "addr": "新北市板橋區西門街",
-    "area": 42,
-    "post_id": 7094467,
-    "price": 42000,
-    "url": "rent-detail-7094467.html"
-  },
-  {
     "addr": "新北市新莊區中港路",
     "area": 34.3,
     "post_id": 7006826,
@@ -5409,13 +5542,6 @@
     "post_id": 6978176,
     "price": 35000,
     "url": "rent-detail-6978176.html"
-  },
-  {
-    "addr": "新北市新店區中正路",
-    "area": 37,
-    "post_id": 6776099,
-    "price": 140000,
-    "url": "rent-detail-6776099.html"
   },
   {
     "addr": "新北市永和區忠孝街",
@@ -5593,32 +5719,11 @@
     "url": "rent-detail-7090705.html"
   },
   {
-    "addr": "新北市板橋區後埔街",
-    "area": 38,
-    "post_id": 7030513,
-    "price": 40000,
-    "url": "rent-detail-7030513.html"
-  },
-  {
-    "addr": "新北市永和區中興街",
-    "area": 26.9,
-    "post_id": 7103233,
-    "price": 62000,
-    "url": "rent-detail-7103233.html"
-  },
-  {
     "addr": "新北市新莊區瓊泰路",
     "area": 33,
     "post_id": 6809255,
     "price": 50000,
     "url": "rent-detail-6809255.html"
-  },
-  {
-    "addr": "新北市新莊區中正路",
-    "area": 28,
-    "post_id": 6919436,
-    "price": 48000,
-    "url": "rent-detail-6919436.html"
   },
   {
     "addr": "新北市三峽區中華路",
@@ -6006,25 +6111,11 @@
     "url": "rent-detail-7044383.html"
   },
   {
-    "addr": "新北市新莊區昌平街",
-    "area": 76.5,
-    "post_id": 7040888,
-    "price": 60000,
-    "url": "rent-detail-7040888.html"
-  },
-  {
     "addr": "新北市三重區重新路四段142巷13弄1號",
     "area": 35,
     "post_id": 7132543,
     "price": 30000,
     "url": "rent-detail-7132543.html"
-  },
-  {
-    "addr": "新北市新莊區昌平街",
-    "area": 36.7,
-    "post_id": 7119108,
-    "price": 43000,
-    "url": "rent-detail-7119108.html"
   },
   {
     "addr": "新北市中和區景平路",
@@ -6223,25 +6314,11 @@
     "url": "rent-detail-6847062.html"
   },
   {
-    "addr": "新北市新莊區中平路26巷",
-    "area": 15.2,
-    "post_id": 6671399,
-    "price": 20000,
-    "url": "rent-detail-6671399.html"
-  },
-  {
     "addr": "新北市板橋區縣民大道三段213號",
     "area": 55,
     "post_id": 7093065,
     "price": 28000,
     "url": "rent-detail-7093065.html"
-  },
-  {
-    "addr": "新北市板橋區南雅東路",
-    "area": 2,
-    "post_id": 7062662,
-    "price": 14000,
-    "url": "rent-detail-7062662.html"
   },
   {
     "addr": "新北市板橋區民生路一段",
@@ -6447,20 +6524,6 @@
     "url": "rent-detail-7086217.html"
   },
   {
-    "addr": "新北市板橋區中山路一段",
-    "area": 80,
-    "post_id": 6904905,
-    "price": 85000,
-    "url": "rent-detail-6904905.html"
-  },
-  {
-    "addr": "新北市板橋區民族路",
-    "area": 92,
-    "post_id": 7018981,
-    "price": 85000,
-    "url": "rent-detail-7018981.html"
-  },
-  {
     "addr": "新北市淡水區民權路",
     "area": 78,
     "post_id": 6995183,
@@ -6515,13 +6578,6 @@
     "post_id": 7072059,
     "price": 190000,
     "url": "rent-detail-7072059.html"
-  },
-  {
-    "addr": "新北市新莊區中正路",
-    "area": 28.8,
-    "post_id": 7027878,
-    "price": 46000,
-    "url": "rent-detail-7027878.html"
   },
   {
     "addr": "新北市永和區福和路",
@@ -7154,20 +7210,6 @@
     "url": "rent-detail-6835422.html"
   },
   {
-    "addr": "新北市樹林區保安二街",
-    "area": 22,
-    "post_id": 7101075,
-    "price": 42000,
-    "url": "rent-detail-7101075.html"
-  },
-  {
-    "addr": "新北市樹林區博愛街",
-    "area": 12,
-    "post_id": 7101090,
-    "price": 50000,
-    "url": "rent-detail-7101090.html"
-  },
-  {
     "addr": "新北市板橋區文化路一段120號",
     "area": 162.5,
     "post_id": 6931034,
@@ -7700,13 +7742,6 @@
     "url": "rent-detail-7080343.html"
   },
   {
-    "addr": "新北市永和區永亨路",
-    "area": 19.3,
-    "post_id": 7044913,
-    "price": 32000,
-    "url": "rent-detail-7044913.html"
-  },
-  {
     "addr": "新北市蘆洲區中山二路",
     "area": 96.9,
     "post_id": 7131686,
@@ -7817,13 +7852,6 @@
     "post_id": 7000946,
     "price": 80000,
     "url": "rent-detail-7000946.html"
-  },
-  {
-    "addr": "新北市汐止區民族二街",
-    "area": 40,
-    "post_id": 7079895,
-    "price": 150000,
-    "url": "rent-detail-7079895.html"
   },
   {
     "addr": "新北市板橋區大觀路三段",
@@ -8223,13 +8251,6 @@
     "post_id": 7097119,
     "price": 52000,
     "url": "rent-detail-7097119.html"
-  },
-  {
-    "addr": "新北市板橋區四川路一段",
-    "area": 40,
-    "post_id": 7008250,
-    "price": 24000,
-    "url": "rent-detail-7008250.html"
   },
   {
     "addr": "新北市新店區安忠路",
@@ -9357,13 +9378,6 @@
     "post_id": 7091113,
     "price": 35000,
     "url": "rent-detail-7091113.html"
-  },
-  {
-    "addr": "新北市中和區橋和路",
-    "area": 208,
-    "post_id": 6983803,
-    "price": 158000,
-    "url": "rent-detail-6983803.html"
   },
   {
     "addr": "新北市新莊區新豐街",
@@ -10582,13 +10596,6 @@
     "post_id": 7060110,
     "price": 32000,
     "url": "rent-detail-7060110.html"
-  },
-  {
-    "addr": "新北市新莊區中平路",
-    "area": 10,
-    "post_id": 7020105,
-    "price": 18000,
-    "url": "rent-detail-7020105.html"
   },
   {
     "addr": "新北市新莊區思源路296巷",
