@@ -12,7 +12,7 @@ urlJumpIp = 1
 def get_house_box(dom, post_id):
     house_boxes = []
     my_list = ["post_id", "房屋資料", "生活機能", "附近交通"]
-    my_dict = {}.fromkeys(my_list)
+    my_dict = {}.fromkeys(my_list, "NULL")
     my_dict["post_id"] = post_id
 
     try:

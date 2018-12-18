@@ -32,7 +32,7 @@ def get_house_box(dom, post_id):
 
     # return house boxes info
     my_list = ["post_id", "房屋資料", "坪數說明", "生活機能", "附近交通"]
-    my_dict = {}.fromkeys(my_list)
+    my_dict = {}.fromkeys(my_list, "NULL")
 
     my_dict["post_id"] = post_id
     for i in range(0, len(names)):

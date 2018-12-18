@@ -12,7 +12,7 @@ urlJumpIp = 3
 def get_info_box(dom, post_id):
         info_box = []
         my_list = ["post_id", "坪數", "樓層", "型態", "現況", "社區", "權狀坪數"]
-        my_dict = {}.fromkeys(my_list)
+        my_dict = {}.fromkeys(my_list, "NULL")
         my_dict["post_id"] = post_id
 
         try:

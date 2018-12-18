@@ -18,7 +18,7 @@ def get_info_box(dom, post_id):
 
     # ********************** floor data ***********************
     floor_attr = ["樓層", "屋齡", "權狀坪數"]
-    floor_data = [None] * 3
+    floor_data = ["NULL"] * 3
 
     try:
         keys = info_box.find_all("div", "info-floor-key")
@@ -36,7 +36,7 @@ def get_info_box(dom, post_id):
         pass
     # ********************* addr data ***************************
     addr_attr = ["型態", "社區", "地址"]
-    addr_data = [None] * 3
+    addr_data = ["NULL"] * 3
 
     try:
         keys = info_box.find_all("span", "info-addr-key")
