@@ -7,8 +7,8 @@ from info_box_TPE import INFO_BOX_TPE_INIT
 from info_box_NTC import INFO_BOX_NTC_INIT
 from house_box_TPE import HOUSE_BOX_TPE_INIT
 from house_box_NTC import HOUSE_BOX_NTC_INIT
-from img_TPE import IMG_TPE_INIT
-from img_NTC import IMG_NTC_INIT
+from lease_img_TPE import IMG_TPE_INIT
+from lease_img_NTC import IMG_NTC_INIT
 
 
 def LEASE_INIT():
@@ -32,7 +32,7 @@ def LEASE_INIT():
             p[i].start()
         for i in range(0, 6):
             p[i].join()
-        for i in ragne(0, 6):
+        for i in range(0, 6):
             p[i].close()
     except Exception as e:
         print(e)
