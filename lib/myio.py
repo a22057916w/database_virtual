@@ -5,6 +5,7 @@ import os
 def read_excel(fname):
     try:
         df = pd.read_excel(fname)
+        df = df.fillna("NULL")
         my_dict = df.to_dict("records")
         return my_dict  # return a list of dict
 
