@@ -11,8 +11,8 @@ def SQL_LEASE_TPE():
       user="root",
       database="storemanager"
     )
-
     mycursor = mydb.cursor()
+
     # check if table exists
     sql = "SHOW TABLES LIKE 'lease_house_info_TPE'"
     mycursor.execute(sql)
