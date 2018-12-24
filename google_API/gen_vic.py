@@ -13,14 +13,14 @@ def get_geoNearBy(locations, types):
         coord = (dicLoc["lat"], dicLoc["lng"]) # make a coordinate
 
         # search the landmarks in the vicinity
-        time.sleep(0.5)
+        time.sleep(10.0)
         result = gmaps.places_nearby(location = coord, radius = 1000, type = types, language = "zh-TW")
         for rst in result["results"]:
             #dist_info = gmaps.distance_matrix(loc["addr"], rst["name"], mode = "walking")
             vic.append({
                 "addr": loc["addr"],
                 "name": rst["name"],
-                "rating": rst["rating"]
+                #"rating": rst["rating"]
                 #"dist": dist_info["rows"][0]["elements"][0]["distance"]["value"],
                 #"time": dist_info["rows"][0]["elements"][0]["duration"]["value"]
             })
@@ -43,11 +43,12 @@ if __name__ == "__main__":
     "sells/data/NTC/geo/general/", "sells/data/TPE/geo/general/"]
 
     locList = [leaseTPE, leaseNTC, sellsTPE, sellsNTC]
-    types = ["subway_station" ,"bus_station", "parking"] # types need to be search for
+    types = ["bus_station", "parking"] # types need to be search for
     vic = [] # a list of naerby facilities
     cnt = 0 # a counter for the locList loop
     for loc in locList:
         for type in types:
             vic = get_geoNearBy(loc, type)
-        save(vic, fname[cnt] + type)
+            print(vic)
+        #save(vic, fname[cnt] + type)
         cnt = cnt + 1
