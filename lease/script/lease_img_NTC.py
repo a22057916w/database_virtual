@@ -20,9 +20,12 @@ def save(img_urls, post_id, dir):
             dname = dir + str(post_id)
             os.makedirs(dname, exist_ok=True)
 
+            cnt = 0         # Counter for photos
             for img_url in img_urls:
-                fname = img_url.split('/')[-1]
+                fname = str(cnt) + ".jpg"
                 urllib.request.urlretrieve(img_url, os.path.join(dname, fname))
+                cnt = cnt + 1
+
         except Exception as e:
             print(e)
 
@@ -46,7 +49,7 @@ def get_images(dom):
 def IMG_NTC_INIT():
     row_data = read_excel("lease/data/NTC/info/total_rows_NTC.xlsx") # get the excel info
 
-    dir = "C:/Python/database/lease/images/NTC/"
+    dir = r"C:\xampp\htdocs\img\lease\NTC/"
     if os.path.exists(dir): # 先刪除原本的images資料夾
         shutil.rmtree(dir, ignore_errors=True)
 
