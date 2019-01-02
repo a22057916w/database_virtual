@@ -27,8 +27,9 @@ def get_info(page):
             "price": int(d["price"].replace(",", "")),
             "area": d["area"],
             "url": str(d["post_id"]) + ".html",
+            "section": d["section_name"],
             "addr": d["region_name"] + d["section_name"] + d["street_name"]
-                + d["alley_name"]
+                + d["alley_name"] + d["lane_name"] + d["addr_number_name"]
         })
 
     return sells_data_info

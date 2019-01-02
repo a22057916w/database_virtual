@@ -21,21 +21,22 @@ def SQL_LEASE_TOTAL_TPE():
         sql = "DROP TABLE lease_total_rows_TPE"
         mycursor.execute(sql)
 
-    sql = "CREATE TABLE lease_total_rows_TPE (id INT AUTO_INCREMENT PRIMARY KEY, post_id INT(255), addr VARCHAR(255), area VARCHAR(255), price VARCHAR(255), url VARCHAR(255))"
+    sql = "CREATE TABLE lease_total_rows_TPE (id INT AUTO_INCREMENT PRIMARY KEY, post_id INT(255), addr VARCHAR(255), section VARCHAR(255), area VARCHAR(255), price VARCHAR(255), url VARCHAR(255))"
     mycursor.execute(sql)
 
 
     house_sheet = read_excel("lease/data/TPE/info/total_rows_TPE.xlsx")
 
-    sql = "INSERT INTO lease_total_rows_TPE (post_id, addr, area, price, url) VALUES (%s, %s, %s, %s, %s)"
+    sql = "INSERT INTO lease_total_rows_TPE (post_id, addr, section, area, price, url) VALUES (%s, %s, %s, %s, %s, %s)"
     for data in house_sheet:
         post_id = data["post_id"]
         addr = data["addr"]
+        section = data["section"]
         area = data["area"]
         price = data["price"]
         url = data["url"]
 
-        val = (post_id, addr, area, price, url)
+        val = (post_id, addr, section, area, price, url)
         print(val)
         mycursor.execute(sql, val)
 

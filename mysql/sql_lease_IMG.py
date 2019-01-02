@@ -26,8 +26,8 @@ def SQL_LEASE_IMG():
 
     sql = "INSERT INTO lease_img_TPE (post_id, directory) VALUES (%s, %s)"
 
-    dir = "C:/Python/database/lease/images/TPE"
-    result = os.listdir(path = r"C:\Python\database\lease\images\TPE")
+    dir = r"C:\xampp\htdocs\img\lease\TPE/"
+    result = os.listdir(path = dir)
     for p in result:
         post_id = p
         path = os.path.join(dir, p)
@@ -51,8 +51,8 @@ def SQL_LEASE_IMG():
 
     sql = "INSERT INTO lease_img_NTC (post_id, directory) VALUES (%s, %s)"
 
-    dir = "C:/Python/database/lease/images/NTC"
-    result = os.listdir(path = r"C:\Python\database\lease\images\NTC")
+    dir = r"C:\xampp\htdocs\img\lease\NTC/"
+    result = os.listdir(path = dir)
     for p in result:
         post_id = p
         path = os.path.join(dir, p)
