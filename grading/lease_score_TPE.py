@@ -16,14 +16,16 @@ def get_general(data):
         mrt = []            # store MRTs for each location
         els = []            # store else traffic info for each location
         for t in tric:
-            if t.find("捷運") > 0 and t.find("公車") < 0:
-                mrt.append(t)
-            else:
-                els.append(t)
+            if t != "NULL":
+                if t.find("捷運") > 0 and t.find("公車") < 0:
+                    mrt.append(t)
+                else:
+                    els.append(t)
         # For life function
         lif = []
         for l in life:
-            lif.append(l)
+            if l != "NULL":
+                lif.append(l)
 
         # Total result
         t_score = len(els) * 2
@@ -36,7 +38,7 @@ def get_general(data):
             "post_id": d["post_id"],
             "MRT": mrt,
             "t_else": els,
-            "life:": lif,
+            "life": lif,
             "t_else_grade": t_score,
             "mrt_grade": "",        # Do grading later
             "life_score": l_score
@@ -54,12 +56,12 @@ def get_MRT_grade(tic, MRT):
                 if re.match(regex, t["MRT"][i]):        # Find matched station
                     mrt_exist = 1
                     t["MRT"][i] = mrt["name"] + "捷運站"           # Rename matched station
-                    min = 5000
+                    min = 3500
                     max = 35000
                     cnt = 1
-                    for j in range(min, max, 5000):         # Grading for 8 class
+                    for j in range(min, max, 3500):         # Grading for 10 class
                         if mrt["avg"] > max:
-                            grade = grade + 8
+                            grade = grade + 10
                             break
                         if mrt["avg"] < j:
                             grade = grade + cnt
@@ -77,19 +79,11 @@ def get_MRT_grade(tic, MRT):
     # end t loop
     return tic
 
-#def GTEST():
-if __name__ == "__main__":
-    TPE_data = read_excel("sells/data/TPE/info/house_box_TPE.xlsx") # get the excel house data info
+def LEASE_SCORE_TPE():
+    TPE_data = read_excel("lease/data/TPE/info/house_box_TPE.xlsx") # get the excel house data info
     mrtOut = read_excel("MRT/mrt_out_avg.xlsx")
-    #print(mrtIn)
-    print(mrtOut[0].keys())
 
     tic_TPE = get_general(TPE_data)
     tic_TPE = get_MRT_grade(tic_TPE, mrtOut)
-    for t in tic_TPE:
-        print(t)
-
-
-    #print(tic_TPE)
-    #save(house_boxes, "sells/data/TPE/info/house_box_TPE")
-    #print(str(__file__) + " complete")
+    save(tic_TPE, "lease/data/TPE/info/score_TPE")
+    print(str(__file__) + " complete")

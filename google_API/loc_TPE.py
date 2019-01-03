@@ -11,13 +11,14 @@ def get_geoLoc(row_data):
         coordinate = gmaps.geocode(data["addr"])[0]["geometry"]["location"]
         print(data["addr"] + ":", coordinate)
         geo_result.append({
+            "post_id": data["post_id"],
             "addr": data["addr"],
             "coordinate": coordinate
         })
     return geo_result
 
 if __name__ == "__main__":
-    gmaps = googlemaps.Client(key = "AIzaSyDcixkMKgROY2tE_4VLPTioPtDOwbmzfcI")
+    gmaps = googlemaps.Client(key = "AIzaSyCrHxviPvuo4ETyb-jkFNL_EnZH8yWuhuw")
 
     # data for lease TPE
     row_data = read_excel("lease/data/TPE/info/total_rows_TPE.xlsx")
