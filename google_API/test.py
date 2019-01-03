@@ -2,31 +2,35 @@ import googlemaps
 import ast
 import sys
 import time
+import requests
+import json
 sys.path.append("lib/")
 from myio import read_excel, save
 
-def get_geoNearBy(locations, types):
+def findPlaces(locations, types, pagetoken = None):
     vic = [] # to save result of the vicinity
     cnt = 0
     for loc in locations:
         dicLoc = ast.literal_eval(loc["coordinate"]) # turn string into dict
         coord = (dicLoc["lat"], dicLoc["lng"]) # make a coordinate
+        lat = dicLoc["lat"]
+        lng = dicLoc["lng"]
+        url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + str(lat) + "," + str(lng) + "&radius=150&type=parking&key=AIzaSyDcixkMKgROY2tE_4VLPTioPtDOwbmzfcI"
+        print(url)
+        response = requests.get(url)
+        res = json.loads(response.text)
+        # print(res)
+        print("here results ---->>> ", len(res["results"]))
 
-        # search the landmarks in the vicinity
-        time.sleep(1.0)
-        result = gmaps.places_nearby(location = coord, radius = 150, type = types, language = "zh-TW")
-        for rst in result["results"]:
-            #dist_info = gmaps.distance_matrix(loc["addr"], rst["name"], mode = "walking")
-            vic.append({
-                "addr": loc["addr"],
-                "name": rst["name"],
-                #"rating": rst["rating"]
-                #"dist": dist_info["rows"][0]["elements"][0]["distance"]["value"],
-                #"time": dist_info["rows"][0]["elements"][0]["duration"]["value"]
-            })
-        print(vic)
+        for result in res["results"]:
+            info = ";".join(map(str,[result["name"],result["geometry"]["location"]["lat"],result["geometry"]["location"]["lng"],result.get("rating",0),result["place_id"]]))
+            print(info)
+            pagetoken = res.get("next_page_token",None)
 
-    return vic
+        print("here -->> ", pagetoken)
+
+    return pagetoken
+
 
 if __name__ == "__main__":
     gmaps = googlemaps.Client(key = "AIzaSyDcixkMKgROY2tE_4VLPTioPtDOwbmzfcI")
@@ -45,4 +49,10 @@ if __name__ == "__main__":
     types = ["bus_station", "parking"] # types need to be search for
     vic = [] # a list of naerby facilities
     cnt = 0 # a counter for the locList loop
-    print(get_geoNearBy(leaseTPE, "bus_station"))
+    pagetoken = None
+    while True:
+        pagetoken = findPlaces(leaseTPE, "parking", pagetoken=pagetoken)
+        time.sleep(5)
+
+        if not pagetoken:
+            break
