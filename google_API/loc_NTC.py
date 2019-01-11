@@ -23,8 +23,8 @@ if __name__ == "__main__":
     # data for lease NTC
     row_data = read_excel("lease/data/NTC/info/total_rows_NTC.xlsx")
     geo_result = get_geoLoc(row_data)
-    save(geo_result, "lease/data/TPE/geo/coordinate/loc_NTC")
+    save(geo_result, "lease/data/NTC/geo/coordinate/loc_NTC")
     # data for sells NTC
     row_data = read_excel("sells/data/NTC/info/total_rows_NTC.xlsx")
     geo_result = get_geoLoc(row_data)
-    save(geo_result, "sells/data/TPE/geo/coordinate/loc_NTC")
+    save(geo_result, "sells/data/NTC/geo/coordinate/loc_NTC")
